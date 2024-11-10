@@ -1,0 +1,28 @@
+:root {
+    --header-background: black;
+    --header-text-color: #BCC1CA;
+    --font-weight-bold: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--header-background);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    font-weight: var(--font-weight-bold);
+    font-size: 0.9em;
+}
+
+nav a {
+    color: var(--header-text-color);
+}
