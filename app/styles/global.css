@@ -3,11 +3,14 @@
     --header-text-color: #BCC1CA;
     --footer-background: #424956;
     --footer-text-color: white;
+    --base-text-color: #171A1F;
     --font-weight-bold: 700;
+    --border-radius: 10px;
 }
 
 body {
     margin: 0;
+    color: var(--base-text-color);
 }
 
 ul {
@@ -37,10 +40,10 @@ nav a {
     color: var(--header-text-color);
 }
 
-main {
+/* main {
     min-height: calc(100vh - 259px);
     overflow: auto;
-}
+} */
 
 footer {
     background-color: var(--footer-background);

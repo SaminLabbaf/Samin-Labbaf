@@ -34,10 +34,10 @@ export default function RootLayout({ children }) {
               <li><a href="#">Contact</a></li>
             </ul>
             <ul>
-              <li><a href='#'><Image src={instagram}/></a></li>
-              <li><a href='#'><Image src={x}/></a></li>
-              <li><a href='#'><Image src={linkedin}/></a></li>
-              <li><a href='#'><Image src={email}/></a></li>
+              <li><a href='#'><Image src={instagram} alt='instagram link'/></a></li>
+              <li><a href='#'><Image src={x} alt='x link'/></a></li>
+              <li><a href='#'><Image src={linkedin} alt='linkedin link'/></a></li>
+              <li><a href='#'><Image src={email} alt='email link'/></a></li>
             </ul>
             <span className='copyRight'>© 2024 Samin Labbaf, All rights preserved.</span>
           </div>
