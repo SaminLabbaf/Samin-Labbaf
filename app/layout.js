@@ -5,10 +5,16 @@ import instagram from '../public/images/instagram-logo.svg'
 import x from '../public/images/x-logo.svg'
 import linkedin from '../public/images/linkedin-logo.svg'
 import email from '../public/images/mail-icon.svg'
+import { Montserrat } from 'next/font/google'
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={montserrat.className}>
       <body>
         <header>
           <Image src={logo} alt='logo' />

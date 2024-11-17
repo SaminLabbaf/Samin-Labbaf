@@ -1,3 +1,11 @@
+p {
+    margin: 0;
+}
+
+h2 {
+    margin-block: 0.3em;
+}
+
 .heroSection {
     background: linear-gradient(180deg, #1378FD 0%, #7F01D8 100%);
     height: 679px;
@@ -32,4 +40,68 @@
     top: -160px;
     left: 50%;
     transform: translate(-50%, 0);
+}
+
+.latestTitle {
+    text-align: center;
+    margin: 2em 0 1em 0;
+
+}
+
+.latestProjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    column-gap: 39px;
+    padding-inline: 80px;
+    margin-bottom: 91px;
+}
+
+.project {
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+    background-color: var(--card-background);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding: 1.6em;
+    cursor: pointer;
+    transition: transform 1s, background-color 0.5s ease, color 0.1s ease;
+    
+}
+
+.project:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+    color: white;
+}
+
+.projectPic {
+    width: 348px;
+    height: 205px;
+    margin-bottom: 20px;
+}
+
+.moreBtn {
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border-radius: var(--border-radius);
+    margin-bottom: 100px;
+    transition: 0.5s;
+}
+
+.moreBtn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    
+}
+
+.moreButtonContainer {
+    display: flex;
+    justify-content: center;
 }
