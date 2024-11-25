@@ -7,7 +7,7 @@ h2 {
 }
 
 .heroSection {
-    background: linear-gradient(180deg, #1378FD 0%, #7F01D8 100%);
+    background: var(--primary-gradient);
     height: 679px;
     overflow: hidden;
 }
@@ -91,7 +91,7 @@ h2 {
     width: 150px;
     height: 50px;
     border-radius: var(--border-radius);
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     transition: 0.5s;
 }
 
@@ -105,3 +105,19 @@ h2 {
     display: flex;
     justify-content: center;
 }
+
+/* Testimonals */
+.content {
+    font-size: var(--font-size-large);
+    margin-top: 90px;
+    max-width: 500px;
+    line-height: var(--line-height);
+}
+
+.carouselText p:last-child {
+    font-size: var(--font-size-small);
+    font-style: italic;
+    font-weight: var(--font-weight-thin);
+    margin-top: 7px;
+}
+

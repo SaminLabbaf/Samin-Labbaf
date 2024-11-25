@@ -3,11 +3,18 @@ import me from '../public/images/me.png'
 import projectPic from '../public/images/project.png'
 import Image from 'next/image'
 import Link from 'next/link'
+import Carousel from './components/carousel'
+import classmate from '../public/images/classmate.png'
+import classmate_2 from '../public/images/classmate_2.png'
+import classmate_3 from '../public/images/classmate_3.png'
+
+
 
 export const metadata = {
   title: 'Samin Labbaf',
   description: 'Samin Labbaf Portfolio',
 }
+
 
 export default function Page() {
   return <>
@@ -43,6 +50,57 @@ export default function Page() {
       <div className='moreButtonContainer'>
         <Link href={'#'}><button className='moreBtn'>More Projects</button></Link>
       </div>
+
+      {/******** Carousel ***********/}
+      <Carousel>
+        <div
+          className='carouselContent'
+        >
+          <div className="zoomContent">
+          <div className="carouselImage">
+            <Image src={classmate} alt='classmate picture' />
+          </div>
+          <div className="carouselText">
+            <p className='content'>
+              "Sit veniam qui tempor ex ipsum voluptate deserunt cillum cillum excepteur elit mollit commodo fugiat enim veniam qui tempor ex ipsum voluptate "
+            </p>
+            <p>Sam Black</p>
+          </div>
+          </div>
+        </div>
+        <div
+          className='carouselContent'
+        >
+          <div className="zoomContent">
+          <div className="carouselImage">
+            <Image src={classmate_2} alt='classmate 2 picture' />
+          </div>
+          <div className="carouselText">
+            <p className='content'>
+              "Sit veniam qui tempor ex ipsum voluptate deserunt cillum cillum excepteur elit mollit commodo fugiat enim veniam qui tempor ex ipsum voluptate "
+            </p>
+            <p>Sam Black</p>
+          </div>
+          </div>
+        </div>
+        <div
+          className='carouselContent'
+        >
+          <div className="zoomContent">
+            <div className="carouselImage">
+              <Image src={classmate_3} alt='classmate picture' />
+            </div>
+            <div className="carouselText">
+              <p className='content'>
+                "Sit veniam qui tempor ex ipsum voluptate deserunt cillum cillum excepteur elit mollit commodo fugiat enim veniam qui tempor ex ipsum voluptate "
+              </p>
+              <p>Sam Black</p>
+            </div>
+          </div>
+        </div>
+
+      </Carousel>
+
     </main>
   </>
 }
