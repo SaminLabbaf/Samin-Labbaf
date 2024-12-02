@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
               <li><a href="#">Work & Skills</a></li>
               <li><a href="#">About Me</a></li>
               <li><a href="#">Projects</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="/Samin-Labbaf/contact">Contact</a></li>
             </ul>
           </nav>
           <div style={{color: 'black'}}>dummy element</div>
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
               <li><a href="#">Work & Skills</a></li>
               <li><a href="#">About Me</a></li>
               <li><a href="#">Projects</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="/Samin-Labbaf/contact">Contact</a></li>
             </ul>
             <ul>
               <li><a href='#'><Image src={instagram} alt='instagram link'/></a></li>
