@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <AppRouterCacheProvider>
         <ThemeProvider theme={theme}>
         <header>
-          <Link href={'/Samin-Labbaf'}><Image src={logo} alt='logo' /></Link>
+          <Link href={'/'}><Image src={logo} alt='logo' /></Link>
           <nav>
             <ul>
               <li><a href="#">Work & Skills</a></li>
