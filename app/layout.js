@@ -9,6 +9,7 @@ import { Montserrat } from 'next/font/google'
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
+import Link from 'next/link';
 
 
 const montserrat = Montserrat({
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
       <AppRouterCacheProvider>
         <ThemeProvider theme={theme}>
         <header>
-          <Image src={logo} alt='logo' />
+          <Link href={'/Samin-Labbaf'}><Image src={logo} alt='logo' /></Link>
           <nav>
             <ul>
               <li><a href="#">Work & Skills</a></li>
