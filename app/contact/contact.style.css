@@ -1,0 +1,19 @@
+.contactPage {
+    display: flex;
+    justify-content: center;
+    column-gap: 200px;
+    padding: 190px 0 150px 0;
+}
+
+.myContactImg {
+    height: 320px;
+    width: 320px;
+}
+
+.form-section {
+    width: 35%;
+}
+
+.form {
+    max-width: 560px;
+}

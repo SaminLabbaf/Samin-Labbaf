@@ -10,6 +10,7 @@ import classmate_3 from '../public/images/classmate_3.png'
 
 
 
+
 export const metadata = {
   title: 'Samin Labbaf',
   description: 'Samin Labbaf Portfolio',

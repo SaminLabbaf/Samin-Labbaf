@@ -6,6 +6,10 @@ import x from '../public/images/x-logo.svg'
 import linkedin from '../public/images/linkedin-logo.svg'
 import email from '../public/images/mail-icon.svg'
 import { Montserrat } from 'next/font/google'
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from '../theme';
+
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -15,7 +19,9 @@ const montserrat = Montserrat({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={montserrat.className}>
-      <body>
+      <body >
+      <AppRouterCacheProvider>
+        <ThemeProvider theme={theme}>
         <header>
           <Image src={logo} alt='logo' />
           <nav>
@@ -23,10 +29,10 @@ export default function RootLayout({ children }) {
               <li><a href="#">Work & Skills</a></li>
               <li><a href="#">About Me</a></li>
               <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </nav>
-          <div>dummy element</div>
+          <div style={{color: 'black'}}>dummy element</div>
         </header>
 
         {children}
@@ -37,7 +43,7 @@ export default function RootLayout({ children }) {
               <li><a href="#">Work & Skills</a></li>
               <li><a href="#">About Me</a></li>
               <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
             <ul>
               <li><a href='#'><Image src={instagram} alt='instagram link'/></a></li>
@@ -49,6 +55,8 @@ export default function RootLayout({ children }) {
           </div>
           
         </footer>
+        </ThemeProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   )

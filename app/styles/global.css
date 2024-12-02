@@ -16,6 +16,8 @@
     --border-radius: 7px;
 }
 
+
+
 body {
     margin: 0;
     color: var(--base-text-color);
@@ -25,15 +27,11 @@ ul {
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 header {
     background-color: var(--header-background);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -42,10 +40,12 @@ nav ul {
     gap: 20px;
     font-weight: var(--font-weight-bold);
     font-size: 0.9em;
+    margin-block: 0;
 }
 
-nav a {
+body a {
     color: var(--header-text-color);
+    text-decoration: none;
 }
 
 /* main {
