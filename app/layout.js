@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
               <li><a href="#">Work & Skills</a></li>
               <li><a href="#">About Me</a></li>
               <li><a href="#">Projects</a></li>
-              <li><Link href={`${process.env.basePath}/contact`}>Contact</Link></li>
+              <li><Link href={`/contact`}>Contact</Link></li>
             </ul>
           </nav>
           <div style={{color: 'black'}}>dummy element</div>
