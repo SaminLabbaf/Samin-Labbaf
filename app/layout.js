@@ -21,42 +21,42 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={montserrat.className}>
       <body >
-      <AppRouterCacheProvider>
-        <ThemeProvider theme={theme}>
-        <header>
-          <Link href={'/'}><Image src={logo} alt='logo' /></Link>
-          <nav>
-            <ul>
-              <li><a href="#">Work & Skills</a></li>
-              <li><a href="/about">About Me</a></li>
-              <li><a href='#'>Projects</a></li>
-              <li><Link href={`/contact`}>Contact</Link></li>
-            </ul>
-          </nav>
-          <div style={{color: 'black'}}>dummy element</div>
-        </header>
+        <AppRouterCacheProvider>
+          <ThemeProvider theme={theme}>
+            <header>
+              <Link href={'/'}><Image src={logo} alt='logo' /></Link>
+              <nav>
+                <ul>
+                  <li><a href="#">Work & Skills</a></li>
+                  <li><a href={'./about'}>About Me</a></li>
+                  <li><a href='#'>Projects</a></li>
+                  <li><Link href={`/contact`}>Contact</Link></li>
+                </ul>
+              </nav>
+              <div style={{ color: 'black' }}>dummy element</div>
+            </header>
 
-        {children}
+            {children}
 
-        <footer>
-          <div className='footerContent'>
-            <ul>
-              <li><a href="#">Work & Skills</a></li>
-              <li><a href="/about">About Me</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-            <ul>
-              <li><a href='#'><Image src={instagram} alt='instagram link'/></a></li>
-              <li><a href='#'><Image src={x} alt='x link'/></a></li>
-              <li><a href='#'><Image src={linkedin} alt='linkedin link'/></a></li>
-              <li><a href='#'><Image src={email} alt='email link'/></a></li>
-            </ul>
-            <span className='copyRight'>© 2024 Samin Labbaf, All rights preserved.</span>
-          </div>
-          
-        </footer>
-        </ThemeProvider>
+            <footer>
+              <div className='footerContent'>
+                <ul>
+                  <li><a href="#">Work & Skills</a></li>
+                  <li><a href={'./about'}>About Me</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="/contact">Contact</a></li>
+                </ul>
+                <ul>
+                  <li><a href='#'><Image src={instagram} alt='instagram link' /></a></li>
+                  <li><a href='#'><Image src={x} alt='x link' /></a></li>
+                  <li><a href='#'><Image src={linkedin} alt='linkedin link' /></a></li>
+                  <li><a href='#'><Image src={email} alt='email link' /></a></li>
+                </ul>
+                <span className='copyRight'>© 2024 Samin Labbaf, All rights preserved.</span>
+              </div>
+
+            </footer>
+          </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
