@@ -1,0 +1,50 @@
+.aboutPage {
+    position: relative;
+    padding-inline: 100px;
+}
+
+.meAbout {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 20vw;
+    height: 60vh;
+    min-width: 460px;
+    min-height: 640px;
+}
+
+.intro {
+    display: flex;
+    margin-bottom: 310px;
+}
+
+.introText {
+    flex: 2;
+    max-width: 440px;
+}
+
+.introText h1 {
+    margin: 230px 0 10px 0;
+}
+
+.mePicContainer {
+    position: relative;
+    flex: 3;
+}
+
+#education h1 {
+    margin: 50px 0 70px 0;
+}
+
+.edTimeline {
+    margin: 0 auto;
+}
+
+
+.MuiTimelineItem-root:first-of-type::before {
+    content: none !important;
+}
+
+.MuiTimelineContent-root {
+    margin-top: -10px !important;
+}

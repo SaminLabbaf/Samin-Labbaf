@@ -12,6 +12,16 @@ const theme = createTheme({
       main: green[500],
     },
   },
+  typography: {
+    fontFamily: 'Montserrat',
+    h1: {
+      fontSize: '30px',
+      fontWeight: 'bold'
+    },
+    h6: {
+      fontSize: '1.125rem'
+    }
+  },
   components: {
     MuiButton: {
       styleOverrides: {

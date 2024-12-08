@@ -28,8 +28,8 @@ export default function RootLayout({ children }) {
           <nav>
             <ul>
               <li><a href="#">Work & Skills</a></li>
-              <li><a href="#">About Me</a></li>
-              <li><a href="#">Projects</a></li>
+              <li><a href="/about">About Me</a></li>
+              <li><a href='#'>Projects</a></li>
               <li><Link href={`/contact`}>Contact</Link></li>
             </ul>
           </nav>
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
           <div className='footerContent'>
             <ul>
               <li><a href="#">Work & Skills</a></li>
-              <li><a href="#">About Me</a></li>
+              <li><a href="/about">About Me</a></li>
               <li><a href="#">Projects</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
