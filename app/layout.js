@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
               <Link href={'/'}><Image src={logo} alt='logo' /></Link>
               <nav>
                 <ul>
-                  <li><a href="#">Work & Skills</a></li>
+                  <li><a href="./work">Work & Skills</a></li>
                   <li><a href={'./about'}>About Me</a></li>
                   <li><a href='#'>Projects</a></li>
                   <li><Link href={`/contact`}>Contact</Link></li>
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
             <footer>
               <div className='footerContent'>
                 <ul>
-                  <li><a href="#">Work & Skills</a></li>
+                  <li><a href="./work">Work & Skills</a></li>
                   <li><a href={'./about'}>About Me</a></li>
                   <li><a href="#">Projects</a></li>
                   <li><a href="/contact">Contact</a></li>

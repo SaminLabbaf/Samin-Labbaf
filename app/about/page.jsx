@@ -17,7 +17,7 @@ export const metadata = {
 export default function About() {
     return <>
         <main className="aboutPage">
-            <Container maxWidth='xl'>
+            <Container maxWidth='lg'>
                 <section className='intro'>
                     <div className='introText'>
                         <Typography variant='h1'>Hello! I'm Samin</Typography>

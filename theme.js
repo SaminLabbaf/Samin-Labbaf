@@ -22,6 +22,11 @@ const theme = createTheme({
       fontSize: '1.125rem'
     }
   },
+  breakpoints: {
+    values: {
+      lg: 1300
+    }
+  },
   components: {
     MuiButton: {
       styleOverrides: {
@@ -29,7 +34,7 @@ const theme = createTheme({
           background: 'linear-gradient(90deg, rgba(69, 102, 234, 0.98) 0%, rgba(153, 17, 243, 0.98) 100%)'
         }
       }
-    }
+    },
   }
 });
 
