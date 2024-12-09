@@ -9,6 +9,10 @@ import JSIcon from '../../public/images/js.svg';
 import MuiIcon from '../../public/images/mui.svg';
 import NextJSIcon from '../../public/images/nextjs.svg';
 import ReactJSIcon from '../../public/images/reactjs.svg';
+import FigmaIcon from '../../public/images/figma.svg';
+import GitHubIcon from '../../public/images/github.svg';
+import GitIcon from '../../public/images/git.svg';
+import VSCodeIcon from '../../public/images/vscode.svg';
 import persistence from '../../public/images/persistence.svg';
 import creativity from '../../public/images/creativity.svg';
 import details from '../../public/images/details.svg';
@@ -73,6 +77,22 @@ export default function Work() {
                         <div className='skill'>
                             <Image src={JSIcon} alt='javascript icon' />
                             <h4>JavaScript</h4>
+                        </div>
+                        <div className='skill'>
+                            <Image src={FigmaIcon} alt='Figma icon' />
+                            <h4>Figma</h4>
+                        </div>
+                        <div className='skill'>
+                            <Image src={GitHubIcon} alt='Github icon' />
+                            <h4>GitHub</h4>
+                        </div>
+                        <div className='skill'>
+                            <Image src={GitIcon} alt='Git icon' />
+                            <h4>Git</h4>
+                        </div>
+                        <div className='skill'>
+                            <Image src={VSCodeIcon} alt='Visual studio code icon' />
+                            <h4>VS Code</h4>
                         </div>
                     </div>
                     <h2>Frameworks & Libraries</h2>
