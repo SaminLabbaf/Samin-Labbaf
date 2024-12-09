@@ -54,7 +54,6 @@ export default function RootLayout({ children }) {
                 </ul>
                 <span className='copyRight'>© 2024 Samin Labbaf, All rights preserved.</span>
               </div>
-
             </footer>
           </ThemeProvider>
         </AppRouterCacheProvider>
